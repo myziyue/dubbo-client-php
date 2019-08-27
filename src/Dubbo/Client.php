@@ -15,7 +15,7 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-namespace Yunhu\DubboClient\Dubbo;
+namespace Myziyue\DubboClient\Dubbo;
 
 abstract class Client
 {

@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 /**
- * This file is part of Yunhu.
+ * This file is part of MyZiyue.
  *
- * @link     https://www.yunhuyj.com/
- * @contact  zhiming.bi@yunhuyj.com
+ * @link     https://www.myziyue.com/
+ * @contact  evan2884@gmail.com
  * @license  http://license.coscl.org.cn/MulanPSL/
  */
 
-namespace Yunhu\DubboClient\Pool;
+namespace Myziyue\DubboClient\Pool;
 
 use Hyperf\Contract\ConfigInterface;
 use Hyperf\Contract\ConnectionInterface;
@@ -18,7 +18,7 @@ use Hyperf\Pool\Pool;
 use Hyperf\Utils\ApplicationContext;
 use Hyperf\Utils\Arr;
 use Psr\Container\ContainerInterface;
-use Yunhu\DubboClient\DubboConnection;
+use Myziyue\DubboClient\DubboConnection;
 
 class DubboPool extends Pool
 {

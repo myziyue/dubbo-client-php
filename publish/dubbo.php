@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 /**
- * This file is part of Yunhu.
+ * This file is part of MyZiyue.
  *
- * @link     https://www.yunhuyj.com/
- * @contact  zhiming.bi@yunhuyj.com
+ * @link     https://www.myziyue.com/
+ * @contact  evan2884@gmail.com
  * @license  http://license.coscl.org.cn/MulanPSL/
  */
 
 return [
     'default' => [
-        'driver'=> \Yunhu\DubboClient\Driver\ZookeeperDriver::class,
+        'driver'=> \Myziyue\DubboClient\Driver\ZookeeperDriver::class,
         'timeout' => 1000,
         'pool' => [
             'min_connections' => 1,

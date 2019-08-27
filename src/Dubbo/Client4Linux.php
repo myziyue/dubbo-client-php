@@ -16,10 +16,10 @@
  *  limitations under the License.
  */
 
-namespace Yunhu\DubboClient\Dubbo;
+namespace Myziyue\DubboClient\Dubbo;
 
-use Yunhu\DubboClient\Exception\DubboServerException;
-use Yunhu\DubboClient\Exception\InvalidExtensionException;
+use Myziyue\DubboClient\Exception\DubboServerException;
+use Myziyue\DubboClient\Exception\InvalidExtensionException;
 
 class Client4Linux extends Client
 {

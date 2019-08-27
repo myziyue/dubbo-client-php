@@ -6,7 +6,7 @@
  * Time: 14:09
  */
 
-namespace Yunhu\DubboClient\Dubbo;
+namespace Myziyue\DubboClient\Dubbo;
 
 
 class DubboResponse

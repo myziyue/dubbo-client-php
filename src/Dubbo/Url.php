@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 /**
- * This file is part of Yunhu.
+ * This file is part of MyZiyue.
  *
- * @link     https://www.yunhuyj.com/
- * @contact  zhiming.bi@yunhuyj.com
+ * @link     https://www.myziyue.com/
+ * @contact  evan2884@gmail.com
  * @license  http://license.coscl.org.cn/MulanPSL/
  */
 
-namespace Yunhu\DubboClient\Dubbo;
+namespace Myziyue\DubboClient\Dubbo;
 
 
 use Hyperf\Contract\StdoutLoggerInterface;
-use Yunhu\DubboClient\Exception\UrlException;
+use Myziyue\DubboClient\Exception\UrlException;
 
 class Url
 {

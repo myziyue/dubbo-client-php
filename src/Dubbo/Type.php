@@ -1,16 +1,16 @@
 <?php
 /**
- * This file is part of Yunhu.
+ * This file is part of MyZiyue.
  *
- * @link     https://www.yunhuyj.com/
+ * @link     https://www.myziyue.com/
  * @author   Bi Zhiming <Evan Bi>
  * @contact  evan2884@gmail.com
  * @license  https://github.com/yunhu/yunhu-zookeeper/blob/master/LICENSE
  */
 
-namespace Yunhu\DubboClient\Dubbo;
+namespace Myziyue\DubboClient\Dubbo;
 
-use Yunhu\DubboClient\Exception\ConsumerException;
+use Myziyue\DubboClient\Exception\ConsumerException;
 
 class Type
 {

@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 /**
- * This file is part of Yunhu.
+ * This file is part of MyZiyue.
  *
- * @link     https://www.yunhuyj.com/
- * @contact  zhiming.bi@yunhuyj.com
+ * @link     https://www.myziyue.com/
+ * @contact  evan2884@gmail.com
  * @license  http://license.coscl.org.cn/MulanPSL/
  */
 
-namespace Yunhu\DubboClient;
+namespace Myziyue\DubboClient;
 
 use Hyperf\Contract\ConfigInterface;
 use Hyperf\Contract\ConnectionInterface;
@@ -17,13 +17,13 @@ use Hyperf\Contract\StdoutLoggerInterface;
 use Hyperf\Pool\Connection as BaseConnection;
 use Hyperf\Pool\Pool;
 use Psr\Container\ContainerInterface;
-use Yunhu\DubboClient\Driver\DriverInterface;
-use Yunhu\DubboClient\Dubbo\DubboRequest;
-use Yunhu\DubboClient\Dubbo\Processor;
-use Yunhu\DubboClient\Dubbo\Type;
-use Yunhu\DubboClient\Exception\ConsumerException;
-use Yunhu\DubboClient\Exception\DubboServerException;
-use Yunhu\DubboClient\Utils\Utils;
+use Myziyue\DubboClient\Driver\DriverInterface;
+use Myziyue\DubboClient\Dubbo\DubboRequest;
+use Myziyue\DubboClient\Dubbo\Processor;
+use Myziyue\DubboClient\Dubbo\Type;
+use Myziyue\DubboClient\Exception\ConsumerException;
+use Myziyue\DubboClient\Exception\DubboServerException;
+use Myziyue\DubboClient\Utils\Utils;
 
 class DubboConnection extends BaseConnection implements ConnectionInterface
 {

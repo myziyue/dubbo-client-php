@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 /**
- * This file is part of Yunhu.
+ * This file is part of MyZiyue.
  *
- * @link     https://www.yunhuyj.com/
- * @contact  zhiming.bi@yunhuyj.com
+ * @link     https://www.myziyue.com/
+ * @contact  evan2884@gmail.com
  * @license  http://license.coscl.org.cn/MulanPSL/
  */
 
 
-namespace YunhuTest\DubboClient;
+namespace MyziyueTest\DubboClient;
 
 use Hyperf\Config\Config;
 use Hyperf\Contract\ConfigInterface;
 use Hyperf\Di\Container;
-use YunhuTest\DubboClient\Stub\DubboPoolStub;
+use MyziyueTest\DubboClient\Stub\DubboPoolStub;
 use Mockery;
 use PHPUnit\Framework\TestCase;
 
@@ -37,7 +37,7 @@ class DubboConnectionTest extends TestCase
         $config = $pool->get()->getConfig();
 
         $this->assertSame([
-            'driver' => \Yunhu\DubboClient\Driver\ZookeeperDriver::class,
+            'driver' => \Myziyue\DubboClient\Driver\ZookeeperDriver::class,
             'timeout' => 0.0,
             'pool' => [
                 'min_connections' => 1,
@@ -70,7 +70,7 @@ class DubboConnectionTest extends TestCase
         $container->shouldReceive('get')->once()->with(ConfigInterface::class)->andReturn(new Config([
             'dubbo' => [
                 'default' => [
-                    'driver' => \Yunhu\DubboClient\Driver\ZookeeperDriver::class,
+                    'driver' => \Myziyue\DubboClient\Driver\ZookeeperDriver::class,
                     'timeout' => 0.0,
                     'pool' => [
                         'min_connections' => 1,

@@ -16,12 +16,12 @@
  *  limitations under the License.
  */
 
-namespace Yunhu\DubboClient\Dubbo;
+namespace Myziyue\DubboClient\Dubbo;
 
 
 use Hyperf\Contract\StdoutLoggerInterface;
 use Hyperf\Utils\ApplicationContext;
-use Yunhu\DubboClient\exception\ConsumerException;
+use Myziyue\DubboClient\exception\ConsumerException;
 
 class Processor
 {

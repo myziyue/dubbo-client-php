@@ -1,11 +1,12 @@
 <?php
 
-namespace Yunhu\DubboClient\Dubbo;
+namespace Myziyue\DubboClient\Dubbo;
 
 use Hyperf\Contract\StdoutLoggerInterface;
 use Hyperf\Utils\ApplicationContext;
 use Icecave\Flax\Serialization\Encoder;
 use Icecave\Flax\DubboParser as Decoder;
+use Myziyue\DubboClient\Exception\ConsumerException;
 
 /**
  *

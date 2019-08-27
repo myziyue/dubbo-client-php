@@ -17,7 +17,7 @@
  */
 
 
-namespace Yunhu\DubboClient\Dubbo;
+namespace Myziyue\DubboClient\Dubbo;
 
 
 class DubboRequest

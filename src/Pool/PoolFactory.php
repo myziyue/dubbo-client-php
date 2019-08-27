@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 /**
- * This file is part of Yunhu.
+ * This file is part of MyZiyue.
  *
- * @link     https://www.yunhuyj.com/
- * @contact  zhiming.bi@yunhuyj.com
+ * @link     https://www.myziyue.com/
+ * @contact  evan2884@gmail.com
  * @license  http://license.coscl.org.cn/MulanPSL/
  */
 
-namespace Yunhu\DubboClient\Pool;
+namespace Myziyue\DubboClient\Pool;
 
 use Hyperf\Di\Container;
 use Psr\Container\ContainerInterface;
