@@ -72,7 +72,7 @@ abstract class Driver
         }
 
         if (empty($urls)) {
-            $this->logger->warn("version: {$version}, group: {$group}, service : {$service} get provider info is empty");
+            $this->logger->warning("version: {$version}, group: {$group}, service : {$service} get provider info is empty");
         }
         return $urls;
     }

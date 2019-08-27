@@ -261,7 +261,7 @@ class Processor
             do {
                 $tmp_data = $socket->recv($resv_len);
                 if (!$tmp_data) {
-                    ApplicationContext::getContainer()->get(StdoutLoggerInterface::class)->warn("socket->recv faile:$resv_len");
+                    ApplicationContext::getContainer()->get(StdoutLoggerInterface::class)->warning("socket->recv faile:$resv_len");
                     break;
                 }
                 $_data .= $tmp_data;

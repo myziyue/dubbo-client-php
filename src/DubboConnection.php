@@ -127,7 +127,7 @@ class DubboConnection extends BaseConnection implements ConnectionInterface
             $costTime = (int)((microtime(true) - $begin_time) * 1000000);
             //记录consumer接口告警日志
             $this->setAccLog($this->connection, $costTime, $e->getMessage());
-            throw new ConsumerException($e->getMessage(), $e);
+            throw new ConsumerException($e->getMessage());
         }
         $costTime = (int)((microtime(true) - $begin_time) * 1000000);
         //记录consumer接口告警日志
