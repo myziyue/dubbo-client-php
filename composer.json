@@ -1,5 +1,5 @@
 {
-    "name": "yunhu/yunhu-dubbo-client",
+    "name": "myziyue/dubbo-client-php",
     "type": "library",
     "license": "MIT",
     "keywords": [
@@ -8,10 +8,10 @@
         "yunhu",
         "dubbo"
     ],
-    "description": "Yunhu Dubbo Client",
+    "description": "Dubbo Client for the PHP framework based on Hyperf",
     "autoload": {
         "psr-4": {
-            "Yunhu\\DubboClient\\": "src/"
+            "MyZiyue\\DubboClient\\": "src/"
         }
     },
     "autoload-dev": {
@@ -40,7 +40,7 @@
     },
     "extra": {
         "hyperf": {
-            "config": "Yunhu\\YunhuDubboClient\\ConfigProvider"
+            "config": "MyZiyue\\DubboClient\\ConfigProvider"
         }
     }
 }
