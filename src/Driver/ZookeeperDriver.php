@@ -12,7 +12,7 @@ declare(strict_types=1);
 namespace Myziyue\DubboClient\Driver;
 
 
-use Myziyue\Zookeeper;
+use Myziyue\Zookeeper\Zookeeper;
 
 class ZookeeperDriver extends Driver implements DriverInterface
 {
