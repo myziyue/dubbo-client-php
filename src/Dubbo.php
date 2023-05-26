@@ -12,7 +12,7 @@ declare(strict_types=1);
 namespace Myziyue\DubboClient;
 
 
-use Hyperf\Utils\Context;
+use Hyperf\Context\Context;
 use Myziyue\DubboClient\Pool\PoolFactory;
 
 class Dubbo
