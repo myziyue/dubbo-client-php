@@ -25,10 +25,13 @@ class DemoController extends Controller
     {
         $serverName = "com.myziyue.Demo.HelloService";
     
-        $dubboClient = ApplicationContext::getContainer()->get(PoolFactory::class)->getPool("default");
+        $dubboClient = ApplicationContext::getContainer()->get(PoolFactory::class)->getPool("default")->createConnection();
+        $dubboClient->setAppVersion('1.0.0');
+        $dubboClient->setAppGroup('default');
+        $dubboClient->setAppServices($serverName);
 
         // 获取服务并调用服务提供的方法hello
-        $helloService = $dubboClient->get($serverName);
+        $helloService = $dubboClient->get();
         $result = $helloService->hello("world");
 
         return $this->response->json([
