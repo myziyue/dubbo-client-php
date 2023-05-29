@@ -12,7 +12,7 @@ declare(strict_types=1);
 namespace Myziyue\DubboClient;
 
 
-use Hyperf\Context\Context;
+use Hyperf\Context\ApplicationContext;
 use Myziyue\DubboClient\Pool\PoolFactory;
 
 class Dubbo
@@ -35,7 +35,7 @@ class Dubbo
     public function __call($name, $arguments)
     {
         // Get a connection from coroutine context or connection pool.
-        $hasContextConnection = Context::has($this->getContextKey());
+        $hasContextConnection = ApplicationContext::has($this->getContextKey());
         $connection = $this->getConnection($hasContextConnection);
 
         try {
@@ -61,7 +61,7 @@ class Dubbo
     {
         $connection = null;
         if ($hasContextConnection) {
-            $connection = Context::get($this->getContextKey());
+            $connection = ApplicationContext::get($this->getContextKey());
         }
         if (!$connection instanceof DubboConnection) {
             $pool = $this->factory->getPool($this->poolName);
