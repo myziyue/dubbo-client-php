@@ -56,7 +56,7 @@ class DubboPool extends Pool
         return $this->name;
     }
 
-    protected function createConnection(): ConnectionInterface
+    public function createConnection(): ConnectionInterface
     {
         ApplicationContext::getContainer()->get(StdoutLoggerInterface::class)->debug("create Connection");
         return new DubboConnection($this->container, $this, $this->config);
