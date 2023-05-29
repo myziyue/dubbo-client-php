@@ -11,7 +11,7 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
-use App\Utils\App;
+use \Hyperf\Context\ApplicationContext;
 use Myziyue\DubboClient\Pool\PoolFactory;
 
 class DemoController extends Controller
@@ -25,7 +25,7 @@ class DemoController extends Controller
     {
         $serverName = "com.myziyue.Demo.HelloService";
     
-        $dubboClient = App::getContainer()->get(PoolFactory::class)->getPool("default");
+        $dubboClient = ApplicationContext::getContainer()->get(PoolFactory::class)->getPool("default");
 
         // 获取服务并调用服务提供的方法hello
         $helloService = $dubboClient->get($serverName);
