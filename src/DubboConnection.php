@@ -173,10 +173,6 @@ class DubboConnection extends BaseConnection implements ConnectionInterface
         if (empty($this->appVersion)) {
             throw new DubboServerException("Application Version is not set, please call 'setAppVersion()' to set.");
         }
-
-        if (empty($this->appServices)) {
-            throw new DubboServerException("Application Services is not set, please call 'setAppServices()' to set.");
-        }
     }
 
     /**
