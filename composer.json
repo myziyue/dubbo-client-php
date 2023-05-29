@@ -11,7 +11,7 @@
     "description": "Dubbo Client for the PHP framework based on Hyperf",
     "autoload": {
         "psr-4": {
-            "MyZiyue\\DubboClient\\": "src/"
+            "Myziyue\\DubboClient\\": "src/"
         }
     },
     "autoload-dev": {
